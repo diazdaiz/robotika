@@ -2,7 +2,7 @@
 void load(Part[][] part){
   Table table=loadTable("data.csv");
   TableRow row;
-  for(int i=0;i<27;i++){
+  for(int i=0;i<31;i++){
     row=table.getRow(i);
     part[0][i].koordinat_titik_berat_default.banyak_baris=3;
     part[0][i].koordinat_titik_berat_default.banyak_kolom=1;
@@ -186,7 +186,7 @@ void transformasi_1(Part[][] part, int kaki, int pe, int di){ //pentransformasi,
 }
 
 void transformasi(Part[][] part){
-  for(int i=0;i<27;i++){
+  for(int i=0;i<31;i++){
     //kaki kiri
     transformasi_0(part[0][i]);
     if(part[0][i].parent!=-1){
@@ -198,4 +198,61 @@ void transformasi(Part[][] part){
       transformasi_1(part, 1, part[1][i].parent, i);
     }
   }
+}
+
+
+
+//Penghitung titik berat
+float massa_total(){
+  float m;
+  m=0;
+  for(int i=0;i<27;i++)
+  {
+    m=m+part[0][i].massa;
+  }
+  return m;
+}
+
+float titik_berat_x_L(){
+  float t;
+  t=0;
+  for(int i=0;i<27;i++)
+  {
+    t=t+part[0][i].koordinat_titik_berat_tertransformasi.elemen[0][0]*part[0][i].massa;
+  }
+  t=(t+104.98*52.05)/(massa_total()+104.98);
+  return t;
+}
+
+float titik_berat_z_L(){
+  float t;
+  t=0;
+  for(int i=0;i<27;i++)
+  {
+    t=t+part[0][i].koordinat_titik_berat_tertransformasi.elemen[2][0]*part[0][i].massa;
+  }
+  t=(t+104.98*75.27)/(massa_total()+104.98);
+  return t;
+}
+
+float titik_berat_x_R(){
+  float t;
+  t=0;
+  for(int i=0;i<27;i++)
+  {
+    t=t+part[1][i].koordinat_titik_berat_tertransformasi.elemen[0][0]*part[1][i].massa;
+  }
+  t=(t+104.98*47.16)/(massa_total()+104.98);
+  return t;
+}
+
+float titik_berat_z_R(){
+  float t;
+  t=0;
+  for(int i=0;i<27;i++)
+  {
+    t=t+part[1][i].koordinat_titik_berat_tertransformasi.elemen[2][0]*part[1][i].massa;
+  }
+  t=(t+104.98*75.23)/(massa_total()+104.98);
+  return t;
 }
