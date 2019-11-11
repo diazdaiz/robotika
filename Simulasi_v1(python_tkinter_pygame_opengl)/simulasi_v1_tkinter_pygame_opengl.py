@@ -163,5 +163,7 @@ draw()
 
 #looping pygame with pygame clock
 while 1:
+    no_servo=int(entry_no_servo.get())
+    slider_rservo.set(rotasi_servo[no_servo])
     clock.tick(30)
     root.update() #update tkinter inside pygame loop
