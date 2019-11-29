@@ -93,6 +93,10 @@ for i in range(151):
             mtemp_1.append(0) #frame transition
         mtemp_2.append(mtemp_1)
     page_step_rotasi.append(mtemp_2)
+    
+step_rotation_copy=[]
+for i in range(27):
+    step_rotation_copy.append(0)
 
 #load page_data
 def load_page():
@@ -106,18 +110,27 @@ def load_page():
             #print(k)
             for j in range(20):
                 if(k<=12):
-                    page_step_rotasi[i][j][k]=int((int(token[j])-512)*180/512)
+                    page_step_rotasi[i][j][k]=int((float(token[j])-512)*180/512)
                 elif(k<=26):
-                    page_step_rotasi[i][j][k]=int((int(token[j])-2048)*180/2048)
+                    page_step_rotasi[i][j][k]=int((float(token[j])-2048)*180/2048)
+                elif(k==28):
+                    page_step_rotasi[i][j][k]=5
                 elif(k==29):
                     page_step_rotasi[i][j][k]=token[j]
                 else:
                     page_step_rotasi[i][j][k]=int(token[j])
             k=k+1
-        '''for line in file:
-            token=line.split(",")
-            print(token)'''
-        
+        file.close()
+        file=open("page_data\\frame_"+str(i), "r")
+        k=0
+        for line in file:
+            token=line.split("\n")
+            token=token[0].split(",")
+            #print(len(token))
+            #print(k)
+            for j in range(20):
+                page_step_rotasi[i][j][k+33]=int(token[j])
+            k=k+1
         file.close()
     
 load_page()
@@ -213,6 +226,14 @@ def slide_servo(val):
     rotasi_servo[int(entry_no_servo.get())]=int(val)
     page_step_rotasi[int(entry_page.get())][int(entry_step.get())][int(entry_no_servo.get())]=rotasi_servo[int(entry_no_servo.get())]
     
+def copy_step():
+    for i in range(27):
+        step_rotation_copy[i]=page_step_rotasi[int(entry_page.get())][int(entry_step.get())][i]
+        
+def paste_step():
+    for i in range(27):
+        page_step_rotasi[int(entry_page.get())][int(entry_step.get())][i]=step_rotation_copy[i]
+    
 def set_name(name):
     for i in range(20):    
         page_step_rotasi[int(entry_page.get())][i][29]=name
@@ -270,19 +291,37 @@ def save_all():
                     else:
                         file.write(str(page_step_rotasi[i][k][j])+"\n")
         file.close()
+    for i in range(1, 151):
+        file=open("page_data\\frame_"+str(i), "w")
+        for j in range(27):
+            for k in range(20):
+                if(k<=18):
+                    file.write(str(page_step_rotasi[i][k][j+33])+",")
+                elif(k==19):
+                    file.write(str(page_step_rotasi[i][k][j+33])+"\n")
+        for j in range(27):
+            for k in range(20):
+                if(k<=18):
+                    file.write(str(page_step_rotasi[i][k][j+60])+",")
+                elif(k==19):
+                    file.write(str(page_step_rotasi[i][k][j+60])+"\n")
+        file.close()
         
 def play():
     global move
     move=True
     page=int(entry_page.get())
     step=int(entry_step.get())
+    page_temp=page
+    step_temp=step
     while move==True and page!=0:
         i=0
-        while i<page_step_rotasi[page][step][30]+1:
-            print(i)
+        while move==True and i<page_step_rotasi[page][step][30]+1:
+            #print(i)
             entry_page_variable.set(page)
             entry_step_variable.set(step)
             draw()
+            root.update()
             time.sleep(page_step_rotasi[page][step][28]/1000)
             time.sleep(page_step_rotasi[page][step][27]/1000)
             if(step+1<page_step_rotasi[page][step][31]):
@@ -292,6 +331,8 @@ def play():
                 step=0
                 if(i==page_step_rotasi[page][step][30]+1):
                     page=page_step_rotasi[page][step][32]
+    entry_page_variable.set(page_temp)
+    entry_step_variable.set(step_temp)
         
 def stop():
     global move
@@ -335,7 +376,7 @@ def translate_frame():
         temp_2=0
         begin_chain=True
         for j in range(len(chain[i])):
-            print(i, j, chain[i][j][3])
+            #print(i, j, chain[i][j][3])
             if(chain[i][j][3]==1):
                 temp_1=temp_1+1
                 if(begin_chain==False):
@@ -352,18 +393,27 @@ def translate_frame():
             for k in range(frame_in_chain[i][j]):
                 sequence=1
                 for l in range(j):
-                    sequence=sequence+frame_in_chain[i][j-1]+1
+                    sequence=sequence+frame_in_chain[i][l]+1
+                
+                #debug
                 print(i, j, sequence, frame_in_chain[i][j])
                 print(chain[i][sequence+frame_in_chain[i][j]][1])
-                print(chain[i][sequence+frame_in_chain[i][j]][2])
-                print(chain[i][sequence+frame_in_chain[i][j]][0])
-                print(chain[i][sequence-1][1])
-                print(chain[i][sequence-1][2])
-                print(chain[i][sequence-1][0])
-                print(page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]], "+", ((k+1)/(frame_in_chain[i][j]+1))*(page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]]-page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]]))
-                print(((k+1)/(frame_in_chain[i][j]+1)),"*(",page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]], "-", page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]],")")
-                page_step_rotasi[chain[i][sequence+k][1]][chain[i][sequence+k][2]][chain[i][sequence+k][0]]=page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]]+((k+1)/(frame_in_chain[i][j]+1))*(page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]]-page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]])
-    
+                #print(chain[i][sequence+frame_in_chain[i][j]][2])
+                #print(chain[i][sequence+frame_in_chain[i][j]][0])
+                #print(chain[i][sequence-1][1])
+                #print(chain[i][sequence-1][2])
+                #print(chain[i][sequence-1][0])
+                #print(page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]], "+", ((k+1)/(frame_in_chain[i][j]+1))*(page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]]-page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]]))
+                #print(((k+1)/(frame_in_chain[i][j]+1)),"*(",page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]], "-", page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]],")")
+                
+                if(page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]+60]==0):
+                    page_step_rotasi[chain[i][sequence+k][1]][chain[i][sequence+k][2]][chain[i][sequence+k][0]]=page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]]+((k+1)/(frame_in_chain[i][j]+1))*(page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]]-page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]])
+                if(page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]+60]==1):
+                    page_step_rotasi[chain[i][sequence+k][1]][chain[i][sequence+k][2]][chain[i][sequence+k][0]]=page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]]+(-math.cos(((k+1)/(frame_in_chain[i][j]+1))*(math.pi/2))+1)*(page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]]-page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]])
+                if(page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]+60]==2):
+                    page_step_rotasi[chain[i][sequence+k][1]][chain[i][sequence+k][2]][chain[i][sequence+k][0]]=page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]]+(-math.cos(((k+1)/(frame_in_chain[i][j]+1))*(math.pi/2)+math.pi/2))*(page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]]-page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]])
+                if(page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]+60]==3):
+                    page_step_rotasi[chain[i][sequence+k][1]][chain[i][sequence+k][2]][chain[i][sequence+k][0]]=page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]]+((-math.cos(((k+1)/(frame_in_chain[i][j]+1))*(math.pi))/2)+(1/2))*(page_step_rotasi[chain[i][sequence+frame_in_chain[i][j]][1]][chain[i][sequence+frame_in_chain[i][j]][2]][chain[i][sequence+frame_in_chain[i][j]][0]]-page_step_rotasi[chain[i][sequence-1][1]][chain[i][sequence-1][2]][chain[i][sequence-1][0]])
 
 #transformation function
 def transformation_0(kaki, pe, di, ur): #pentransformasi, ditrasformasi, urutan
@@ -615,6 +665,9 @@ entry_page=Entry(frame_controller, textvariable=entry_page_variable)
 entry_page.grid(row=7, column=1)
 entry_page_variable.set("1")
 
+button_copy_step=Button(frame_controller, text="copy step", command=lambda: copy_step())
+button_copy_step.grid(row=7, column=2, sticky=W)
+
 label_step=Label(frame_controller, text="step:")
 label_step.grid(row=8, column=0)
 
@@ -622,6 +675,9 @@ entry_step_variable=IntVar()
 entry_step=Entry(frame_controller, textvariable=entry_step_variable)
 entry_step.grid(row=8, column=1)
 entry_step_variable.set("0")
+
+button_paste_step=Button(frame_controller, text="paste step", command=lambda: paste_step())
+button_paste_step.grid(row=8, column=2, sticky=W)
 
 label_page_name=Label(frame_controller, text="page name")
 label_page_name.grid(row=9, column=0)
@@ -697,7 +753,7 @@ label_step_time.grid(row=15, column=0)
 entry_step_time_variable=IntVar()
 entry_step_time=Entry(frame_controller, textvariable=entry_step_time_variable)
 entry_step_time.grid(row=15, column=1)
-entry_step_time_variable.set("25")
+entry_step_time_variable.set("40")
 
 button_step_time=Button(frame_controller, text="set time", command=lambda:set_time(entry_step_time.get()))
 button_step_time.grid(row=15, column=2, sticky=W)
