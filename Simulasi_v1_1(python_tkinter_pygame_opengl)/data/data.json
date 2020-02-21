@@ -1,0 +1,2702 @@
+[
+  {
+    "kaki": "kiri",
+    "id": 0,
+    "K_titik_berat": [
+      [
+        -99.47
+      ],
+      [
+        529.95
+      ],
+      [
+        78.1
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        493.1
+      ],
+      [
+        44.05
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 2,
+    "massa": 33.29,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      2,
+      0
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 1,
+    "K_titik_berat": [
+      [
+        -105.62
+      ],
+      [
+        530.09
+      ],
+      [
+        73.69
+      ]
+    ],
+    "K_servo": [
+      [
+        -99.59
+      ],
+      [
+        511.23
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 0,
+    "massa": 36.74,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      2,
+      0,
+      1
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 2,
+    "K_titik_berat": [
+      [
+        -99.88
+      ],
+      [
+        480.19
+      ],
+      [
+        43.86
+      ]
+    ],
+    "K_servo": [
+      [
+        -100.0
+      ],
+      [
+        0.0
+      ],
+      [
+        43.8
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 26,
+    "massa": 6.06,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      2
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 3,
+    "K_titik_berat": [
+      [
+        -43.73
+      ],
+      [
+        448.93
+      ],
+      [
+        61.86
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        450.67
+      ],
+      [
+        61.79
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": -90.0,
+    "parent": 26,
+    "massa": 8.16,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      3
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 4,
+    "K_titik_berat": [
+      [
+        -157.03
+      ],
+      [
+        450.36
+      ],
+      [
+        61.15
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        451.78
+      ],
+      [
+        61.24
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": -90.0,
+    "parent": 26,
+    "massa": 8.16,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      4
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 5,
+    "K_titik_berat": [
+      [
+        -16.55
+      ],
+      [
+        441.18
+      ],
+      [
+        62.04
+      ]
+    ],
+    "K_servo": [
+      [
+        -26.33
+      ],
+      [
+        440.95
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": -90.0,
+    "parent": 3,
+    "massa": 19.7,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      3,
+      5
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 6,
+    "K_titik_berat": [
+      [
+        -184.4
+      ],
+      [
+        443.29
+      ],
+      [
+        60.88
+      ]
+    ],
+    "K_servo": [
+      [
+        -174.85
+      ],
+      [
+        442.82
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 90.0,
+    "parent": 4,
+    "massa": 19.7,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      4,
+      6
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 7,
+    "K_titik_berat": [
+      [
+        22.1
+      ],
+      [
+        441.68
+      ],
+      [
+        55.43
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        441.38
+      ],
+      [
+        62.09
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 90.0,
+    "parent": 5,
+    "massa": 23.31,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      3,
+      5,
+      7
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 8,
+    "K_titik_berat": [
+      [
+        -222.49
+      ],
+      [
+        444.74
+      ],
+      [
+        53.91
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        443.93
+      ],
+      [
+        60.83
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 90.0,
+    "parent": 6,
+    "massa": 22.22,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      4,
+      6,
+      8
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 9,
+    "K_titik_berat": [
+      [
+        73.76
+      ],
+      [
+        442.46
+      ],
+      [
+        62.55
+      ]
+    ],
+    "K_servo": [
+      [
+        46.82
+      ],
+      [
+        0.0
+      ],
+      [
+        62.49
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 7,
+    "massa": 33.27,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      3,
+      5,
+      7,
+      9
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 10,
+    "K_titik_berat": [
+      [
+        -274.74
+      ],
+      [
+        446.91
+      ],
+      [
+        60.4
+      ]
+    ],
+    "K_servo": [
+      [
+        -247.27
+      ],
+      [
+        0.0
+      ],
+      [
+        60.67
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 8,
+    "massa": 33.27,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      4,
+      6,
+      8,
+      10
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 11,
+    "K_titik_berat": [
+      [
+        153.06
+      ],
+      [
+        435.33
+      ],
+      [
+        59.94
+      ]
+    ],
+    "K_servo": [
+      [
+        100.85
+      ],
+      [
+        0.0
+      ],
+      [
+        62.82
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 9,
+    "massa": 16.36,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 12,
+    "K_titik_berat": [
+      [
+        -363.83
+      ],
+      [
+        434.02
+      ],
+      [
+        57.98
+      ]
+    ],
+    "K_servo": [
+      [
+        -301.34
+      ],
+      [
+        0.0
+      ],
+      [
+        60.33
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 10,
+    "massa": 16.36,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 13,
+    "K_titik_berat": [
+      [
+        -102.04
+      ],
+      [
+        305.97
+      ],
+      [
+        63.03
+      ]
+    ],
+    "K_servo": [
+      [
+        -102.44
+      ],
+      [
+        0.0
+      ],
+      [
+        61.59
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 15,
+    "massa": 380.29,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 14,
+    "K_titik_berat": [
+      [
+        -139.14
+      ],
+      [
+        225.81
+      ],
+      [
+        76.56
+      ]
+    ],
+    "K_servo": [
+      [
+        -139.06
+      ],
+      [
+        257.63
+      ],
+      [
+        74.94
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 15,
+    "massa": 14.61,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      14
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 15,
+    "K_titik_berat": [
+      [
+        -102.28
+      ],
+      [
+        261.39
+      ],
+      [
+        60.66
+      ]
+    ],
+    "K_servo": [
+      [
+        -65.87
+      ],
+      [
+        257.27
+      ],
+      [
+        74.93
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 19,
+    "massa": 288.23,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 16,
+    "K_titik_berat": [
+      [
+        -140.68
+      ],
+      [
+        135.67
+      ],
+      [
+        71.2
+      ]
+    ],
+    "K_servo": [
+      [
+        -139.66
+      ],
+      [
+        206.18
+      ],
+      [
+        71.39
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 18,
+    "massa": 103.44,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      14,
+      18,
+      16
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 17,
+    "K_titik_berat": [
+      [
+        -65.9
+      ],
+      [
+        197.16
+      ],
+      [
+        50.4
+      ]
+    ],
+    "K_servo": [
+      [
+        -65.66
+      ],
+      [
+        206.04
+      ],
+      [
+        71.39
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 21,
+    "massa": 166.16,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 18,
+    "K_titik_berat": [
+      [
+        -139.53
+      ],
+      [
+        197.55
+      ],
+      [
+        49.96
+      ]
+    ],
+    "K_servo": [
+      [
+        -139.26
+      ],
+      [
+        206.32
+      ],
+      [
+        28.29
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 14,
+    "massa": 164.29,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      14,
+      18
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 19,
+    "K_titik_berat": [
+      [
+        -65.94
+      ],
+      [
+        225.35
+      ],
+      [
+        76.56
+      ]
+    ],
+    "K_servo": [
+      [
+        -66.06
+      ],
+      [
+        205.86
+      ],
+      [
+        28.69
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 17,
+    "massa": 14.61,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 20,
+    "K_titik_berat": [
+      [
+        -141.44
+      ],
+      [
+        83.95
+      ],
+      [
+        78.4
+      ]
+    ],
+    "K_servo": [
+      [
+        -141.05
+      ],
+      [
+        115.4
+      ],
+      [
+        71.16
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 16,
+    "massa": 36.6,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      14,
+      18,
+      16,
+      20
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 21,
+    "K_titik_berat": [
+      [
+        -65.53
+      ],
+      [
+        135.19
+      ],
+      [
+        71.21
+      ]
+    ],
+    "K_servo": [
+      [
+        -65.41
+      ],
+      [
+        115.24
+      ],
+      [
+        71.15
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 23,
+    "massa": 103.44,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 22,
+    "K_titik_berat": [
+      [
+        -141.7
+      ],
+      [
+        45.6
+      ],
+      [
+        50.27
+      ]
+    ],
+    "K_servo": [
+      [
+        -142.04
+      ],
+      [
+        36.3
+      ],
+      [
+        71.65
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 20,
+    "massa": 164.29,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      14,
+      18,
+      16,
+      20,
+      22
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 23,
+    "K_titik_berat": [
+      [
+        -65.41
+      ],
+      [
+        83.48
+      ],
+      [
+        78.4
+      ]
+    ],
+    "K_servo": [
+      [
+        -65.41
+      ],
+      [
+        36.14
+      ],
+      [
+        71.65
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 25,
+    "massa": 36.6,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 24,
+    "K_titik_berat": [
+      [
+        -155.2
+      ],
+      [
+        5.81
+      ],
+      [
+        75.36
+      ]
+    ],
+    "K_servo": [
+      [
+        -141.72
+      ],
+      [
+        36.53
+      ],
+      [
+        28.95
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 22,
+    "massa": 106.57,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      14,
+      18,
+      16,
+      20,
+      22,
+      24
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 25,
+    "K_titik_berat": [
+      [
+        -65.65
+      ],
+      [
+        44.58
+      ],
+      [
+        50.72
+      ]
+    ],
+    "K_servo": [
+      [
+        -65.73
+      ],
+      [
+        36.05
+      ],
+      [
+        28.95
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": -1,
+    "massa": 166.16,
+    "model": "none",
+    "urutan_transformasi": [
+      25
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 26,
+    "K_titik_berat": [
+      [
+        -100.73
+      ],
+      [
+        416.18
+      ],
+      [
+        49.86
+      ]
+    ],
+    "K_servo": [
+      [
+        -101.83
+      ],
+      [
+        330.28
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 13,
+    "massa": 462.71,
+    "model": "none",
+    "urutan_transformasi": [
+      25,
+      23,
+      21,
+      17,
+      19,
+      15,
+      13,
+      26
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kiri",
+    "id": 27,
+    "K_titik_berat": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": -1,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [
+      27
+    ],
+    "keterangan_tambahan": "untuk 3d model part telapak kaki yang tidak mempunyai servo"
+  },
+  {
+    "kaki": "kiri",
+    "id": 28,
+    "K_titik_berat": [
+      [
+        -210.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 24,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [],
+    "keterangan_tambahan": "untuk titik tambahan pembuat polygon wilayah zmp/com"
+  },
+  {
+    "kaki": "kiri",
+    "id": 29,
+    "K_titik_berat": [
+      [
+        -210.0
+      ],
+      [
+        0.0
+      ],
+      [
+        150.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 24,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [],
+    "keterangan_tambahan": "untuk titik tambahan pembuat polygon wilayah zmp/com"
+  },
+  {
+    "kaki": "kiri",
+    "id": 30,
+    "K_titik_berat": [
+      [
+        -110.0
+      ],
+      [
+        0.0
+      ],
+      [
+        150.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 24,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [],
+    "keterangan_tambahan": "untuk titik tambahan pembuat polygon wilayah zmp/com"
+  },
+  {
+    "kaki": "kiri",
+    "id": 31,
+    "K_titik_berat": [
+      [
+        -110.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 24,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [],
+    "keterangan_tambahan": "untuk titik tambahan pembuat polygon wilayah zmp/com"
+  },
+  {
+    "kaki": "kanan",
+    "id": 0,
+    "K_titik_berat": [
+      [
+        8.25
+      ],
+      [
+        502.3
+      ],
+      [
+        44.05
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        493.06
+      ],
+      [
+        44.05
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 2,
+    "massa": 22.1,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      2,
+      0
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 1,
+    "K_titik_berat": [
+      [
+        8.44
+      ],
+      [
+        529.9
+      ],
+      [
+        78.09
+      ]
+    ],
+    "K_servo": [
+      [
+        8.3
+      ],
+      [
+        511.17
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 0,
+    "massa": 36.74,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      2,
+      0,
+      1
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 2,
+    "K_titik_berat": [
+      [
+        8.03
+      ],
+      [
+        480.14
+      ],
+      [
+        43.86
+      ]
+    ],
+    "K_servo": [
+      [
+        7.91
+      ],
+      [
+        0.0
+      ],
+      [
+        43.8
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 26,
+    "massa": 6.06,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      2
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 3,
+    "K_titik_berat": [
+      [
+        64.18
+      ],
+      [
+        448.88
+      ],
+      [
+        61.86
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        450.6
+      ],
+      [
+        61.8
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": -90.0,
+    "parent": 26,
+    "massa": 8.16,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      3
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 4,
+    "K_titik_berat": [
+      [
+        -49.12
+      ],
+      [
+        450.31
+      ],
+      [
+        61.15
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        451.73
+      ],
+      [
+        61.24
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": -90.0,
+    "parent": 26,
+    "massa": 8.16,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      4
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 5,
+    "K_titik_berat": [
+      [
+        91.36
+      ],
+      [
+        441.13
+      ],
+      [
+        62.04
+      ]
+    ],
+    "K_servo": [
+      [
+        81.81
+      ],
+      [
+        441.12
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": -90.0,
+    "parent": 3,
+    "massa": 19.7,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      3,
+      5
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 6,
+    "K_titik_berat": [
+      [
+        -76.49
+      ],
+      [
+        443.24
+      ],
+      [
+        60.88
+      ]
+    ],
+    "K_servo": [
+      [
+        -66.71
+      ],
+      [
+        442.99
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 90.0,
+    "parent": 4,
+    "massa": 19.7,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      4,
+      6
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 7,
+    "K_titik_berat": [
+      [
+        130.01
+      ],
+      [
+        441.63
+      ],
+      [
+        55.43
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        441.33
+      ],
+      [
+        62.09
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 90.0,
+    "parent": 5,
+    "massa": 23.31,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      3,
+      5,
+      7
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 8,
+    "K_titik_berat": [
+      [
+        -114.58
+      ],
+      [
+        444.69
+      ],
+      [
+        53.91
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        443.88
+      ],
+      [
+        60.83
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 90.0,
+    "parent": 6,
+    "massa": 22.22,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      4,
+      6,
+      8
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 9,
+    "K_titik_berat": [
+      [
+        181.67
+      ],
+      [
+        442.41
+      ],
+      [
+        62.55
+      ]
+    ],
+    "K_servo": [
+      [
+        154.73
+      ],
+      [
+        0.0
+      ],
+      [
+        62.49
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 7,
+    "massa": 33.27,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      3,
+      5,
+      7,
+      9
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 10,
+    "K_titik_berat": [
+      [
+        -166.73
+      ],
+      [
+        446.86
+      ],
+      [
+        60.39
+      ]
+    ],
+    "K_servo": [
+      [
+        -139.36
+      ],
+      [
+        0.0
+      ],
+      [
+        60.67
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 8,
+    "massa": 33.27,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      4,
+      6,
+      8,
+      10
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 11,
+    "K_titik_berat": [
+      [
+        -258.42
+      ],
+      [
+        436.26
+      ],
+      [
+        60.24
+      ]
+    ],
+    "K_servo": [
+      [
+        208.76
+      ],
+      [
+        0.0
+      ],
+      [
+        62.81
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 9,
+    "massa": 16.36,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 12,
+    "K_titik_berat": [
+      [
+        258.48
+      ],
+      [
+        434.94
+      ],
+      [
+        58.19
+      ]
+    ],
+    "K_servo": [
+      [
+        -193.43
+      ],
+      [
+        0.0
+      ],
+      [
+        60.33
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 10,
+    "massa": 16.36,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 13,
+    "K_titik_berat": [
+      [
+        5.87
+      ],
+      [
+        305.92
+      ],
+      [
+        63.03
+      ]
+    ],
+    "K_servo": [
+      [
+        5.47
+      ],
+      [
+        0.0
+      ],
+      [
+        61.59
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 14,
+    "massa": 380.29,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 14,
+    "K_titik_berat": [
+      [
+        5.63
+      ],
+      [
+        261.34
+      ],
+      [
+        60.66
+      ]
+    ],
+    "K_servo": [
+      [
+        -31.15
+      ],
+      [
+        0.0
+      ],
+      [
+        74.93
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 18,
+    "massa": 288.23,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 15,
+    "K_titik_berat": [
+      [
+        41.97
+      ],
+      [
+        225.3
+      ],
+      [
+        76.56
+      ]
+    ],
+    "K_servo": [
+      [
+        42.04
+      ],
+      [
+        0.0
+      ],
+      [
+        74.93
+      ]
+    ],
+    "sumbu": "y",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 14,
+    "massa": 14.61,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      15
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 16,
+    "K_titik_berat": [
+      [
+        -31.62
+      ],
+      [
+        197.57
+      ],
+      [
+        50.41
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        206.13
+      ],
+      [
+        71.39
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 20,
+    "massa": 166.16,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 17,
+    "K_titik_berat": [
+      [
+        42.38
+      ],
+      [
+        135.14
+      ],
+      [
+        71.21
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        205.99
+      ],
+      [
+        71.39
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 19,
+    "massa": 103.44,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      15,
+      19,
+      17
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 18,
+    "K_titik_berat": [
+      [
+        -31.23
+      ],
+      [
+        225.76
+      ],
+      [
+        76.56
+      ]
+    ],
+    "K_servo": [
+      [
+        -31.35
+      ],
+      [
+        206.84
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 16,
+    "massa": 14.61,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 19,
+    "K_titik_berat": [
+      [
+        42.01
+      ],
+      [
+        197.11
+      ],
+      [
+        50.4
+      ]
+    ],
+    "K_servo": [
+      [
+        41.85
+      ],
+      [
+        206.38
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 15,
+    "massa": 166.16,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      15,
+      19
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 20,
+    "K_titik_berat": [
+      [
+        -32.77
+      ],
+      [
+        135.62
+      ],
+      [
+        71.2
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        115.35
+      ],
+      [
+        71.15
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 22,
+    "massa": 103.44,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 21,
+    "K_titik_berat": [
+      [
+        42.5
+      ],
+      [
+        83.43
+      ],
+      [
+        78.4
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        115.19
+      ],
+      [
+        71.15
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 17,
+    "massa": 34.89,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      15,
+      19,
+      17,
+      21
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 22,
+    "K_titik_berat": [
+      [
+        -33.53
+      ],
+      [
+        83.9
+      ],
+      [
+        78.4
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        36.26
+      ],
+      [
+        71.65
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 24,
+    "massa": 36.6,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 23,
+    "K_titik_berat": [
+      [
+        42.27
+      ],
+      [
+        45.07
+      ],
+      [
+        50.27
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        36.09
+      ],
+      [
+        71.65
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": 21,
+    "massa": 164.29,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      15,
+      19,
+      17,
+      21,
+      23
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 24,
+    "K_titik_berat": [
+      [
+        -33.79
+      ],
+      [
+        45.55
+      ],
+      [
+        50.27
+      ]
+    ],
+    "K_servo": [
+      [
+        -33.81
+      ],
+      [
+        36.48
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "negatif",
+    "sudut_awal_rotasi": 0,
+    "parent": -1,
+    "massa": 164.29,
+    "model": "none",
+    "urutan_transformasi": [
+      24
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 25,
+    "K_titik_berat": [
+      [
+        55.28
+      ],
+      [
+        5.11
+      ],
+      [
+        75.35
+      ]
+    ],
+    "K_servo": [
+      [
+        42.18
+      ],
+      [
+        36.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 23,
+    "massa": 104.98,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      15,
+      19,
+      17,
+      21,
+      23,
+      25
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 26,
+    "K_titik_berat": [
+      [
+        7.18
+      ],
+      [
+        416.13
+      ],
+      [
+        49.86
+      ]
+    ],
+    "K_servo": [
+      [
+        6.39
+      ],
+      [
+        330.54
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "z",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 13,
+    "massa": 462.71,
+    "model": "none",
+    "urutan_transformasi": [
+      24,
+      22,
+      20,
+      16,
+      18,
+      14,
+      13,
+      26
+    ],
+    "keterangan_tambahan": "none"
+  },
+  {
+    "kaki": "kanan",
+    "id": 27,
+    "K_titik_berat": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": -1,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [
+      27
+    ],
+    "keterangan_tambahan": "untuk 3d model part telapak kaki yang tidak mempunyai servo"
+  },
+  {
+    "kaki": "kanan",
+    "id": 28,
+    "K_titik_berat": [
+      [
+        10.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 25,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [],
+    "keterangan_tambahan": "untuk titik tambahan pembuat polygon wilayah zmp/com"
+  },
+  {
+    "kaki": "kanan",
+    "id": 29,
+    "K_titik_berat": [
+      [
+        10.0
+      ],
+      [
+        0.0
+      ],
+      [
+        150.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 25,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [],
+    "keterangan_tambahan": "untuk titik tambahan pembuat polygon wilayah zmp/com"
+  },
+  {
+    "kaki": "kanan",
+    "id": 30,
+    "K_titik_berat": [
+      [
+        110.0
+      ],
+      [
+        0.0
+      ],
+      [
+        150.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 25,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [],
+    "keterangan_tambahan": "untuk titik tambahan pembuat polygon wilayah zmp/com"
+  },
+  {
+    "kaki": "kanan",
+    "id": 31,
+    "K_titik_berat": [
+      [
+        110.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "K_servo": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        0.0
+      ]
+    ],
+    "sumbu": "x",
+    "arah_rotasi": "positif",
+    "sudut_awal_rotasi": 0,
+    "parent": 25,
+    "massa": 0.0,
+    "model": "none",
+    "urutan_transformasi": [],
+    "keterangan_tambahan": "untuk titik tambahan pembuat polygon wilayah zmp/com"
+  }
+]
