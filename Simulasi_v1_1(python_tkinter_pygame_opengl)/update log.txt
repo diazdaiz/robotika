@@ -1,11 +1,14 @@
--v1
- *simulasi diluncurkan
--v1.01
- *perbaikan time pada command play agar menyesuaikan time play pada robot
- *animasi pada play tidak lagi patah-patah pada saat interval time antar step besar
- *perbaikan pause pada saat di play
 -v1.1
  *merapihkan folder, comment, fungsi, class, nama variabel
  *semua data di luar program
  *menggunakan numpy dalam perhitungan matriks
  *inverse kinematic diterapkan
+
+-v1.01
+ *perbaikan time pada command play agar menyesuaikan time play pada robot
+ *animasi pada play tidak lagi patah-patah pada saat interval time antar step besar
+ *perbaikan pause pada saat di play
+
+-v1
+ *simulasi diluncurkan
+
