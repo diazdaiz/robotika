@@ -624,6 +624,40 @@ def draw():
     #for i in range(28):
     #    circle=canvas.create_oval(300/3+c.arana.part["kiri"][i].KT_titik_berat[0][0]*3/5,11*300/12-c.arana.part["kiri"][i].KT_titik_berat[1][0]*3/5,300/3+c.arana.part["kiri"][i].KT_titik_berat[0][0]*3/5+(c.arana.part["kiri"][i].KT_titik_berat[2][0]+300)/60,11*300/12-c.arana.part["kiri"][i].KT_titik_berat[1][0]*3/5+(c.arana.part["kiri"][i].KT_titik_berat[2][0]+300)/60, fill=f._from_rgb((255,255,255)))
 
+
+def getAcceleration(values, inter=1):
+    '''
+    Return numerical 2nd order differentiation of values.
+    Calculated using 2nd order backward difference method.
+
+    values = [position1, postion2, position3]
+
+    ASSUME CONSTANT CALCULATION INTERVALS
+    '''
+    interval= inter
+    return (values[2]-2*values[1]+values[0])/interval**2
+
+def zmp(robot, kaki, sumbu):
+    '''
+    Calculate the robot's ZMP on X or Y axis.
+
+    Tries to obtain 2 previous value of ZMP calculation (TO BE IMPLEMENTED).
+    Use numerical differentiation to obtain the acceleration (TO BE IMPLEMENTED).
+
+    prevzmp is a list of tuple which contains the value calculated
+    ex: prevzmp = [123,144]
+
+    '''
+    g=9.806
+
+    try:
+        prevzmp = robot.getPrevZMP(sumbu) # NEED TO BE IMPLEMENTED
+    else:
+        prevzmp = [0,0]
+
+    com=f.titik_berat(robot, kaki, sumbu)
+    return com-getAcceleration(prevzmp+[com])/g*f.titik_berat(robot, kaki, 'z')
+
 #add gui to tkinter
 root=Tk()
 root.title("Simulator")
